@@ -1,8 +1,40 @@
 body {
-  padding: 50px;
+  margin: 0px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+/*Left column formatting*/
+#left-column{
+    float: left;
+    height: 600px;
+    width: 500px;
+}
+
+/*Right column formatting*/
+#right-column{
+    float: right;
+    height: 600px;
+    width: 500px;
+}
+
+/*Div class to be able to add multiple boxes for projects, */
+/*Customizations and Formatting for box class*/
+.box{
+    height: 300px;
+    width: 400px;
+    float: left;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 
+}
+
+
+.clear{
+    clear: both;
 }
