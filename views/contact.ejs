@@ -9,7 +9,43 @@
   </head>
   <body>
     <%- include('header') %>
-    
+    <!-- bootstrap to create a space/row that is centered-->
+    <div class ="row justify-content-center my-4">
+        <div class="col-md-8 col-lg-6">
+            <!-- mb-3 boostrap class to create spacing above and below other elements-->
+            <h1 class="mb-3">Contact Me</h1>
+            <p class="text-muted mb-4">Feel free to reach out by filling out the form below</p>
+            
+            <!-- Contact Form Using Bootstrap form controls-->
+            <form action="mailto:shakir.hossain@ontariotechu.net" method="POST" enctype="text/plain">
+                <!-- First Name Input Box-->
+                <div class="mb-3">
+                    <label for="Fname" class="form-label">First Name:</label>
+                    <input type="text" class="form-control" id="Fname" name="Fname" required>
+                </div>
+                <!-- Last Name Input Box-->
+                <div class="mb-3">
+                    <label for="Lname" class="form-label">Last Name:</label>
+                    <input type="text" class="form-control" id="Lname" name="Lname" required>
+                </div>   
+                <!-- Email Field-->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <!-- Message/Comments Field-->
+                <div class="mb-3">
+                    <label for="Comments" class="form-label">Message:</label>
+                    <textarea class="form-control" id="Comments" name="Comments" rows="5" required></textarea>
+                </div>
+                <!-- Submit/Reset buttons-->
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                    <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <%- include('footer') %>
   </body>
 </html>
