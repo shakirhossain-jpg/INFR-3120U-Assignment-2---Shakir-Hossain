@@ -43,5 +43,7 @@ a {
 }
 
 body {
-    background: beige;
+    /* !important to be cited, used to make background beige and override restrctions
+    regular input was not working */
+    background: #d8cbb8 !important;
 }
