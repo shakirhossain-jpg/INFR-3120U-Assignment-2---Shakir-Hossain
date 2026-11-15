@@ -41,3 +41,7 @@ a {
 .clear{
     clear: both;
 }
+
+body {
+    background: beige;
+}
